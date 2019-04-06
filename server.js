@@ -46,6 +46,6 @@ app.get('/poem', (req, res) => poem.handle(req, res, db) ) ;
 
 
 
-app.listen(8080 || process.env.PORT, () => {
+app.listen(process.env.PORT || 8080 , () => {
 	console.log('server is online') ;
 }) ;
